@@ -1,0 +1,68 @@
+<!-- book txt -->
+<p class="s_reader-num" title="110">110</p>
+
+<p class="s_reader-txt book-txt" style="top:193px;">내 방을 정리하는 모습을 살펴봅시다.</p>
+<button data-btn="page-btn" class="click-change-btn" title="클릭하기 활동 버튼입니다. 내 방에는 옷장, 책꽂이, 침대가 있어요. 각 가구를 클릭하여 어떻게 정리해야 하는지 확인해 보세요. 버튼을 눌러 활동을 시작하세요." data-popup-target="popup_1" style="left:560px; top:185px;"></button>
+<button data-btn="page-btn" class="essence-btn" data-essence="popup_1" style="left:10px; top:195px;"></button>
+
+<p class="s_reader-txt book-txt" style="top:689px;">물건을 어디에 정리하면 좋을지 연결해 봅시다.</p>
+<button data-btn="page-btn" class="draw-line-btn" title="선긋기 활동 버튼입니다. 물건을 어디에 정리하면 좋을지 각 가구를 찾아 알맞게 선을 이어 보세요. 버튼을 눌러 활동을 시작하세요." data-popup-target="popup_2" style="left:673px; top:681px;"></button>
+<button data-btn="page-btn" class="essence-btn" data-essence="popup_2" style="left:10px; top:691px;"></button>
+
+
+
+<!-- book popup -->
+<div class="popup_view" title="팝업 영역" data-popup-name="popup_1">
+    <div class="popup_box" data-type="button-click">
+        <div class="popup_header">
+            <div class="popup_title">내 방을 정리하는 모습을 살펴봅시다.</div>
+            <button class="popup_close_btn"></button>
+        </div>
+        <div class="popup_content">
+            <img src="./08_01_01/7/click_bg1.png" tabindex="6" alt="집의 다양한 방이 보이는 사진입니다. 집에는 부엌, 현관, 화장실 등이 있습니다."/>
+
+            <div class="popup_content_box">
+				<button data-btn="event-btn" class="click-obj click-obj-img" tabindex="11" data-target="pop1-5-target-1" style="left: 255px; top: 159px;" title="부엌"></button>
+				<button data-btn="event-btn" class="click-obj click-obj-img" tabindex="13" data-target="pop1-5-target-2" style="left: 435px; top: 346px;" title="현관"></button>
+				<button data-btn="event-btn" class="click-obj click-obj-img" tabindex="15" data-target="pop1-5-target-3" style="left: 716px; top: 167px;" title="화장실"></button>
+
+				<img src="./08_01_01/7/pop1_1.png" id="pop1-5-target-1" class="acc-box-hide" tabindex="12" style="left: 21px; top: 506px; width: 258px; height: 277px;" alt="부엌에서 그릇을 정리하는 엄마의 모습"/>
+				<img src="./08_01_01/7/pop1_2.png" id="pop1-5-target-2" class="acc-box-hide" tabindex="14" style="left: 305px; top: 506px; width: 258px; height: 277px;" alt="현관에 나와 있는 신발을 신발장에 정리하는 해린이의 모습"/>
+				<img src="./08_01_01/7/pop1_3.png" id="pop1-5-target-3" class="acc-box-hide" tabindex="16" style="left: 588px; top: 506px; width: 258px; height: 277px;" alt="화장실에서 수건을 정리하는 아빠의 모습"/>
+			</div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="popup_view" title="팝업 영역" data-popup-name="popup_2">
+	<div class="popup_box" data-type="lineDrawing">
+		<div class="popup_header">
+			<div class="popup_title">물건을 어디에 정리하면 좋을지 연결해 봅시다.</div>
+			<button class="popup_close_btn"></button>
+		</div>
+		<div class="popup_content">
+			<img src="./08_01_01/7/line_bg.png" />
+
+			<div class="active-box drag-line-active">
+				<canvas width="870" height="692"></canvas>
+
+				<button data-btn="event-btn" class="drag-obj" style="left:313px; top:89px;" data-ans="1" title="첫 번째 물건. 이불"></button>
+				<button data-btn="event-btn" class="drag-obj" style="left:313px; top:321px;" data-ans="2" title="두 번째 물건. 책"></button>
+				<button data-btn="event-btn" class="drag-obj" style="left:313px; top:554px;" data-ans="3" title="세 번째 물건. 옷"></button>
+
+				<button data-btn="event-btn" class="drop-obj" style="left:510px; top:89px;" data-ans="3" title="첫 번째 가구. 옷장"></button>
+				<button data-btn="event-btn" class="drop-obj" style="left:510px; top:321px;" data-ans="2" title="두 번째 가구. 책꽂이"></button>
+				<button data-btn="event-btn" class="drop-obj" style="left:510px; top:554px;" data-ans="1" title="세 번째 가구. 침대"></button>
+			</div>
+
+			<div class="btn-box">
+				<button data-btn="event-btn" class="ans-check-btn" title="정답확인"></button>
+				<button data-btn="event-btn" class="ans-preveal-btn" title="정답미리보기" data-target="pop2-7-target1-1"></button>
+			</div>
+
+			<div class="acc-box-hide" id="pop2-7-target1-1" tabindex="12" style="z-index:3; left: 105px; top: 11px; width: 654px; height: 672px;" title="정답 설명입니다. 이불은 침대에 연결하고, 책은 책꽂이에 연결하며, 옷은 옷장에 연결합니다. "></div>
+		</div>
+	</div>
+</div>
