@@ -1,0 +1,58 @@
+<!-- book txt -->
+<p class="s_reader-num" title="백 십 이">112</p>
+<p class="s_reader-txt unit-right-top-num" title="삼 단원">3단원</p>
+
+<p class="s_reader-txt book-txt" style="top:193px;">여럿이 함께 하면 재미있는 활동을 모두 찾아봅시다.</p>
+<button data-btn="page-btn" class="click-ans-btn" title="선택하기 활동 버튼입니다. 보드게임을 하는 모습, 축구를 하는 모습, 혼자 티비를 보는 모습이 있어요. 여럿이 함께하면 재미있는 활동을 찾아 선택해 보세요. 버튼을 눌러 활동을 시작하세요." data-popup-target="popup_1" style="left:715px; top:233px;"></button>
+<button data-btn="page-btn" class="essence-btn" data-essence="popup_1" style="left:10px; top:195px;"></button>
+
+<p class="s_reader-txt book-txt" style="top:626px;">운동을 할 수 있는 취미 활동을 찾아봅시다.</p>
+<button data-btn="page-btn" class="click-ans-btn" title="선택하기 활동 버튼입니다. 상기가 몇 가지 취미 활동 중 운동으로 할 수 있는 활동을 선택하려 하고 있어요. 운동을 할 수 있는 취미를 찾아 선택해 보세요. 버튼을 눌러 활동을 시작하세요." data-popup-target="popup_2" style="left:715px; top:669px;"></button>
+<button data-btn="page-btn" class="essence-btn" data-essence="popup_2" style="left:10px; top:632px;"></button>
+
+<!-- book popup -->
+<div class="popup_view" title="팝업 영역" data-popup-name="popup_1">
+	<div class="popup_box" data-type="button-click" data-option="ans-multiple">
+		<div class="popup_header">
+			<div class="popup_title">여럿이 함께 하면 재미있는 활동을 모두 찾아봅시다</div>
+			<button class="popup_close_btn"></button>
+		</div>
+
+		<div class="popup_content">
+			<img src="./08_01_01/112/click_bg1.png"/>
+
+			<div class="click-active-obj-box absolute">
+                <button data-btn="event-btn" style="left: 110px; top: 312px; width:114px; height:108px;" class="click-obj click-active-obj chk-box" data-ans="no" title="친구들과 함께 보드게임을 하는 모습의 선택창"></button>
+				<button data-btn="event-btn" style="left: 380px; top: 312px; width:114px; height:108px;" class="click-obj click-active-obj chk-box" data-ans="yes" title="혼자 티비를 보는 모습의 선택창"></button>
+				<button data-btn="event-btn" style="left: 648px; top: 312px; width:114px; height:108px;" class="click-obj click-active-obj chk-box" data-ans="no" title="친구들과 함께 축구를 하는 모습의 선택창"></button>
+			</div>
+
+			<div class="btn-box" >
+				<button data-btn="event-btn" class="ans-check-btn" title="정답확인" data-target="pop1-112-target1-1"></button>
+			</div>
+
+			<div class="acc-box-hide" id="pop1-112-target1-1" tabindex="1012" style="left: 115px; top: 10px; width: 645px; height: 715px;" title="여럿이 함께 하면 재미있는 활동은 보드게임과, 축구입니다."></div>
+		</div>
+	</div>
+</div>
+
+<div class="popup_view" title="팝업 영역" data-popup-name="popup_2">
+	<div class="popup_box" data-type="button-click" data-option="ans">
+		<div class="popup_header">
+			<div class="popup_title">운동을 할 수 있는 취미 활동을 찾아봅시다.</div>
+			<button class="popup_close_btn"></button>
+		</div>
+
+		<div class="popup_content">
+			<img src="./08_01_01/112/click_bg2.png"/>
+
+			<div class="click-active-obj-box absolute" data-ans="c">
+				<button data-btn="event-btn" style="left: 164px; top: 413px; width:114px; height:108px;" class="click-obj click-active-obj chk-box2" title="그림 그리는 모습의 선택창" data-ans="a"></button>
+				<button data-btn="event-btn" style="left: 164px; top: 413px; width:114px; height:108px;" class="click-obj click-active-obj chk-box2" title="도서관 모습의 선택창" data-ans="a"></button>
+				<button data-btn="event-btn" style="left: 589px; top: 413px; width:114px; height:108px;" class="click-obj click-active-obj chk-box2" title="수영하는 모습의 선택창" data-ans="c" data-target="pop2-112-target1-1"></button>
+			</div>
+
+			<div class="acc-box-hide" id="pop2-112-target1-1" tabindex="1012" style="left: 32px; top: 24px; width: 803px; height: 352px;" title="정답 설명입니다. 운동을 할 수 있는 취미활동은 수영입니다."></div>
+		</div>
+	</div>
+</div>
